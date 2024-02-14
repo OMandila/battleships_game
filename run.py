@@ -13,3 +13,12 @@ def board():
              [' ',' ','*',' ','*',' ','*',' ','*',' ','*',' ','*',' ',' ']]
     return board
 
+def create_board(board):
+    """
+    Display the playground as a board on the terminal
+    """
+    print()  # Print a newline before the board
+    for row in board:  # Iterate over each row in the board
+        for cell in row:  # Iterate over each cell in the row
+            print(cell, end='')  # Print each cell in the row without a newline, but with a space
+        print()  # Print a newline after each row
