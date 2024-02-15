@@ -30,4 +30,7 @@ def main():
     playground = board()
     create_board(playground)
 
+print()
+print("-----------------------THE MINI BATTLESHIPS GAME-----------------------")
+print("This is a strategy type guessing game for one player against the computer.")
 main()
