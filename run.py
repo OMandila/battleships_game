@@ -97,9 +97,9 @@ def calculate_scores(battleships, capsized):
     Determines the scores for the players
     """
     if (battleships-capsized) > capsized:
-        print ("YOU WIN!\n")
+        print ("\nYOU WIN!\n")
     else:
-        print ("YOU LOSE!\n")
+        print ("\nYOU LOSE!\n")
 
     print(f"Out of {battleships} battleships, {capsized} capsized by your opponent missiles.\n")
     print("================================================================================\n")
@@ -108,11 +108,15 @@ def main():
     """
     Runs all program functions.
     """
-    playground = board()
-    create_board(playground)
-    Battleships = select_space(playground)
-    Capsized = enemy_target(playground)
-    calculate_scores(Battleships, Capsized)
+    while True:
+        playground = board()
+        create_board(playground)
+        Battleships = select_space(playground)
+        Capsized = enemy_target(playground)
+        calculate_scores(Battleships, Capsized)
+        end = input("\nDo you want to play again? Y/N: ").lower()
+        if end == 'n':
+            break
 
 print()
 print("-----------------------THE MINI BATTLESHIPS GAME-----------------------")
