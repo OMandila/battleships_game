@@ -1,3 +1,5 @@
+import random
+
 def board():
     """
     Return playground coordinates as a list of lists
@@ -59,6 +61,35 @@ def select_space(board):
             print(e)
 
     return battleships
+
+def enemy_target(board):
+    """
+    Determines the coordinates of the location for the missiles to be dropped
+    The function returns the number of battleships capsized
+    """
+    missiles = 0
+    capsized = 0
+    # Randomly select positions for opponent missiles
+    while True:
+        if missiles < random.randint(6, 12): # Keeping the total number of missiles deployed random
+            row = random.randint(2, 7)  # Adjusted for the board's structure, account for zero indexing
+            col = random.choice([2, 4, 6, 8, 10, 12])  # Columns numbers adjusted to account for spaces
+            # Choose between Ⓧ and x to place in the board
+            if board[row][col] == ' ':
+                board[row][col] = 'x'
+            elif board[row][col] == '⊙':
+                board[row][col] = 'Ⓧ'
+                capsized += 1
+            else:
+                board[row][col] = 'x'
+            missiles += 1
+            continue
+        
+        print(f"The computer launched {missiles} missiles and capsized {capsized} ship(s) here 'Ⓧ '. The other locations that were hit by the missiles are 'x'.")
+        create_board(board)
+        break
+
+    return capsized
 
 def main():
     """
