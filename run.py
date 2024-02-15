@@ -85,11 +85,22 @@ def enemy_target(board):
             missiles += 1
             continue
         
-        print(f"The computer launched {missiles} missiles and capsized {capsized} ship(s) here 'Ⓧ '. The other locations that were hit by the missiles are 'x'.")
+        print(f"Your opponent launched {missiles} missiles and capsized {capsized} battleship(s) here 'Ⓧ '. The other locations that were hit by the missiles are 'x'.")
         create_board(board)
         break
 
     return capsized
+
+def calculate_scores(battleships, capsized):
+    """
+    Determines the scores for the players
+    """
+    if (battleships-capsized) > capsized:
+        print ("YOU WIN!")
+    else:
+        print ("YOU LOSE!")
+
+    print(f"Out of {battleships} battleships, {capsized} capsized by your opponent missiles.\n")
 
 def main():
     """
@@ -97,10 +108,12 @@ def main():
     """
     playground = board()
     create_board(playground)
-    x = select_space(playground)
-    y = enemy_target(playground)
+    Battleships = select_space(playground)
+    Capsized = enemy_target(playground)
+    calculate_scores(Battleships, Capsized)
 
 print()
 print("-----------------------THE MINI BATTLESHIPS GAME-----------------------")
 print("This is a strategy type guessing game for one player against the computer.")
+print("You win by having more battleships than the ones destroyed by your opponent.")
 main()
