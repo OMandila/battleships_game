@@ -67,6 +67,7 @@ N/A - This project is a terminal-based game and does not have a web interface.
 ### Bugs
 #### Resolved Bugs
 - Initial versions did not correctly check for valid input ranges for both players.
+- Initial versions of the game did not correctly track the number of ships and missiles.
 
 #### Unresolved Bugs
 - No unresolved bugs at the moment.
