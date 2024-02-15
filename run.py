@@ -23,5 +23,11 @@ def create_board(board):
             print(cell, end='')  # Print each cell in the row without a newline, but with a space
         print()  # Print a newline after each row
 
-board = board()
-create_board(board)
+def main():
+    """
+    Runs all program functions.
+    """
+    playground = board()
+    create_board(playground)
+
+main()
