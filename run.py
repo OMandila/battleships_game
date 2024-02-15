@@ -71,7 +71,7 @@ def enemy_target(board):
     capsized = 0
     # Randomly select positions for opponent missiles
     while True:
-        if missiles < random.randint(6, 12): # Keeping the total number of missiles deployed random
+        if missiles < random.randint(2, 20): # Keeping the total number of missiles deployed random
             row = random.randint(2, 7)  # Adjusted for the board's structure, account for zero indexing
             col = random.choice([2, 4, 6, 8, 10, 12])  # Columns numbers adjusted to account for spaces
             # Choose between Ⓧ and x to place in the board
@@ -84,7 +84,8 @@ def enemy_target(board):
                 board[row][col] = 'x'
             missiles += 1
             continue
-        
+        print("=================================================================================================================================")
+        print("GAME ANALYSIS")
         print(f"Your opponent launched {missiles} missiles and capsized {capsized} battleship(s) here 'Ⓧ '. The other locations that were hit by the missiles are 'x'.")
         create_board(board)
         break
@@ -100,7 +101,8 @@ def calculate_scores(battleships, capsized):
     else:
         print ("YOU LOSE!")
 
-    print(f"Out of {battleships} battleships, {capsized} capsized by your opponent missiles.\n")
+    print(f"Out of {battleships} battleships, {capsized} capsized by your opponent missiles.")
+    print("=================================================================================================================================\n")
 
 def main():
     """
