@@ -22,3 +22,6 @@ def create_board(board):
         for cell in row:  # Iterate over each cell in the row
             print(cell, end='')  # Print each cell in the row without a newline, but with a space
         print()  # Print a newline after each row
+
+board = board()
+create_board(board)
