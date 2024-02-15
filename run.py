@@ -84,9 +84,9 @@ def enemy_target(board):
                 board[row][col] = 'x'
             missiles += 1
             continue
-        print("=================================================================================================================================")
+        print("=================================================================================================================================\n")
         print("GAME ANALYSIS")
-        print(f"Your opponent launched {missiles} missiles and capsized {capsized} battleship(s) here 'Ⓧ '. The other locations that were hit by the missiles are 'x'.")
+        print(f"Your opponent launched {missiles} missiles and capsized {capsized} battleship(s) here 'Ⓧ '. The other locations that were hit by the missiles are 'x'.\n")
         create_board(board)
         break
 
@@ -101,7 +101,7 @@ def calculate_scores(battleships, capsized):
     else:
         print ("YOU LOSE!")
 
-    print(f"Out of {battleships} battleships, {capsized} capsized by your opponent missiles.")
+    print(f"Out of {battleships} battleships, {capsized} capsized by your opponent missiles.\n")
     print("=================================================================================================================================\n")
 
 def main():
