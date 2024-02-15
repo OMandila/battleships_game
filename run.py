@@ -37,7 +37,7 @@ def select_space(board):
         try:
             if ships < battleships:
                 # Select positions in an empty space on the board
-                print("\nIdentify the coordinates for the location of your battleships:\n")
+                print("Identify the coordinates for the location of your battleships:\n")
                 col = int(input("Enter column value: "))  # Collects user input for column value
                 row = int(input("Enter row value: "))  # Collects user input for row value
 
@@ -98,6 +98,7 @@ def main():
     playground = board()
     create_board(playground)
     x = select_space(playground)
+    y = enemy_target(playground)
 
 print()
 print("-----------------------THE MINI BATTLESHIPS GAME-----------------------")
