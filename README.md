@@ -1,5 +1,6 @@
 # The Mini Battleships Game
 This is a Python terminal game running in the Code Institute mock terminal on Heroku.
+![amiresponsive screens for Battleship Game](https://github.com/OMandila/battleships_game/assets/71443713/b8b5a84d-9a88-45ae-bf6f-759d114d1314)
 
 ## Table of Contents
 - [Introduction](#introduction)
