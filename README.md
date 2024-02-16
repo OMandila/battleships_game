@@ -1,4 +1,4 @@
-# The Mini Battleships Game
+# The Missiles Attack Game
 This is a Python terminal game running in the Code Institute mock terminal on Heroku.
 ![amiresponsive screens for Battleship Game](https://github.com/OMandila/battleships_game/assets/71443713/b8b5a84d-9a88-45ae-bf6f-759d114d1314)
 
@@ -33,11 +33,11 @@ This is a Python terminal game running in the Code Institute mock terminal on He
   - [Media](#media)
 
 ## Introduction
-The Mini Battleships Game is a strategy type guessing game designed for two players: the PLAYER (you) and the OPPONENT (computer).
+The Missiles Attack Game is a strategy type guessing game designed for two players: the PLAYER (you) and the OPPONENT (computer).
 ![Battleships Game - Flowchart](https://github.com/OMandila/battleships_game/assets/71443713/d206eaf0-220e-429b-a4b1-27e8ca503ceb)
 
 ## Project Overview
-This project simulates the classic Battleships game where players take turns to guess the locations of each other's ships on a hidden board with the aim of "capsizing" all the opponent's ships.
+This project is inspired by the classic Battleships game where players take turns to guess the locations of each other's ships on a hidden board with the aim of "capsizing" all the opponent's ships.
 Each battleship occupies one square on the board, identified by column and row coordinates. A missile from the opponent "lands" on a square also identified by column and row coordinates.
 The live version of my project is deployed [in Heroku](https://om-battleships-game-4b68485d0a26.herokuapp.com/)
 
@@ -84,10 +84,10 @@ The game uses a simple data model represented by a 2D list (list of lists) to cr
 - Battleship Placement: User inputs for battleship locations are translated into coordinates that place '⊙' symbols on the board.
 - Missile Strikes: Similar input handling is used for simulating missile strikes from the computer, updating the board with 'x' for misses and 'Ⓧ' for hits on player battleships.
 
-This model supports the core gameplay loop, where the player and the computer take turns to set up and to attack the battleships based on this shared board structure.
+This model supports the core gameplay loop, where the player and the computer take turns to set up and to attack the battleships based on the shared board structure.
 
 ## User Stories
-- As a player, I want to be able to easily understand how to play the Battleships game so that I can get playing without prior experience.
+- As a player, I want to be able to easily understand how to play the Missiles Attack game so that I can get playing without prior experience.
 - As a player, I want to see the game board clearly so that I can decide the positioning of my battleships.
 - As a player, I want to know when I get hit or missed by my opponent's missiles so that I can learn the strategy my opponent is using to deploy their missiles.
 - As a player, I want to know when I get hit or missed by my opponent's missiles so that I can adjust my ships positions accordingly in the next attempt.
@@ -130,7 +130,7 @@ I performed testing for this application by doing the following:
 #### Resolved Bugs
 - Initial versions did not correctly identify invalid input ranges for both players. I resolved this by accounting for the empty, i.e., empty cells ' ' in the domain values for the column coordinates.
 - Initial versions of the game did not correctly track the number of ships and missiles. I corrected this by initializing the counter outside the loop.
-- The deployed version of my Battleships game was at one point in time not displaying the Game Analysis section well, i.e., this section was constantly truncated midway. I resolved this bug by adding new line escape characters (\n) on every print statement in the Game Analysis section.
+- The deployed version of my Missiles Attack game was at one point in time not displaying the Game Analysis section well, i.e., this section was constantly truncated midway. I resolved this bug by adding new line escape characters (\n) on every print statement in the Game Analysis section.
 
 #### Unresolved Bugs
 - No unresolved bugs are known at the moment.
