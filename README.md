@@ -53,19 +53,21 @@ Here’s how to get started with this game:
 ## Features
 ### Existing features
 *Interactive Battleship Placement:* The Player can input their battleship positions at the beginning of the game.
+![image](https://github.com/OMandila/battleships_game/assets/71443713/69cd0eb1-90a6-456e-bc74-5fc70b989475)
 
+![image](https://github.com/OMandila/battleships_game/assets/71443713/e7f64545-acb2-46e1-b302-956ec1df5cb8)
+
+![image](https://github.com/OMandila/battleships_game/assets/71443713/4c85131b-84c0-4cfe-8f96-30bf1b95661b)
 
 *Automatic Enemy Fire:* The computer randomly selects targets, simulating enemy fire.
 
-
 *Hit and Miss Feedback:* The board updates with symbols indicating hits and misses.
 
-
 *Score Calculation:* At the end of each game, scores are calculated based on the number of ships sunk and remaining.
-
+![image](https://github.com/OMandila/battleships_game/assets/71443713/5d30d992-73c8-4660-a205-c1e6a5f88d20)
 
 *Automatic Restart:* The Player can restart the game every time by typing anything apart from 'N' at the end.
-
+![image](https://github.com/OMandila/battleships_game/assets/71443713/3e8b59e4-0a6e-4982-913b-bade54b20a05)
 
 ### Future features
 *Player vs. Player Mode:* Allowing two human players to compete against each other.
