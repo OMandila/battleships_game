@@ -52,30 +52,33 @@ Here’s how to get started with this game:
 
 ## Features
 ### Existing features
-*Interactive Battleship Placement:* The Player can input their battleship positions at the beginning of the game.
-![image](https://github.com/OMandila/battleships_game/assets/71443713/69cd0eb1-90a6-456e-bc74-5fc70b989475)
+- *Interactive Battleship Placement:* The Player can input their battleship positions at the beginning of the game.
+
+![image](https://github.com/OMandila/battleships_game/assets/71443713/3a37a764-ea3c-4e98-b82d-e2cee45548ad)
 
 ![image](https://github.com/OMandila/battleships_game/assets/71443713/e7f64545-acb2-46e1-b302-956ec1df5cb8)
 
 ![image](https://github.com/OMandila/battleships_game/assets/71443713/4c85131b-84c0-4cfe-8f96-30bf1b95661b)
 
-*Automatic Enemy Fire:* The computer randomly selects targets, simulating enemy fire.
+- *Automatic Enemy Fire:* The computer randomly selects targets, simulating enemy fire.
 
-*Hit and Miss Feedback:* The board updates with symbols indicating hits and misses.
+- *Hit and Miss Feedback:* The board updates with symbols indicating hits and misses.
 
-*Score Calculation:* At the end of each game, scores are calculated based on the number of ships sunk and remaining.
+- *Score Calculation:* At the end of each game, scores are calculated based on the number of ships sunk and remaining.
+
 ![image](https://github.com/OMandila/battleships_game/assets/71443713/5d30d992-73c8-4660-a205-c1e6a5f88d20)
 
-*Automatic Restart:* The Player can restart the game every time by typing anything apart from 'N' at the end.
+- *Automatic Restart:* The Player can restart the game every time by typing anything apart from 'N' at the end.
+
 ![image](https://github.com/OMandila/battleships_game/assets/71443713/3e8b59e4-0a6e-4982-913b-bade54b20a05)
 
 ### Future features
-*Player vs. Player Mode:* Allowing two human players to compete against each other.
-*Improved AI for Computer:* Making the computer's choice of targets smarter based on previous hits.
-*Customizable Board Size:* Letting players choose different board sizes to vary the game's difficulty.
-*Battleship Size:* Letting players vary the sizes of their battleships.
-*Graphical User Interface (GUI):* Implementing a simple GUI for the game for those who prefer not to use the terminal.
-*Leaderboards:* Adding a feature to track high scores or win/loss records over time.
+- *Player vs. Player Mode:* Allowing two human players to compete against each other.
+- *Improved AI for Computer:* Making the computer's choice of targets smarter based on previous hits.
+- *Customizable Board Size:* Letting players choose different board sizes to vary the game's difficulty.
+- *Battleship Size:* Letting players vary the sizes of their battleships.
+- *Graphical User Interface (GUI):* Implementing a simple GUI for the game for those who prefer not to use the terminal.
+- *Leaderboards:* Adding a feature to track high scores or win/loss records over time.
 
 ## Data Model
 The game uses a simple data model represented by a 2D list (list of lists) to create and manipulate the game board:
