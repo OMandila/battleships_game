@@ -116,16 +116,16 @@ def main():
     while True:
         playground = board()
         create_board(playground)
-        Battleships = select_space(playground)
-        Capsized = enemy_target(playground)
-        calculate_scores(Battleships, Capsized)
+        number_of_ships = select_space(playground)
+        number_capsized = enemy_target(playground)
+        calculate_scores(number_of_ships, number_capsized)
         end = input("\nDo you want to play again? Y/N: ").lower()
         if end == 'n':
             break
 
 if __name__ == "__main__":
 	print()
-	print("-----------------------THE MINI BATTLESHIPS GAME-----------------------")
+	print("-----------------------THE MISSILES ATTACK GAME-----------------------")
 	print("This is a strategy type guessing game for one player against the computer.")
 	print("You only win by having more battleships available than the ones destroyed by the computer.")
 	main()
