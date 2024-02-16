@@ -33,6 +33,7 @@ This is a Python terminal game running in the Code Institute mock terminal on He
 
 ## Introduction
 The Mini Battleships Game is a strategy type guessing game designed for two players: the PLAYER (you) and the OPPONENT (computer).
+![Battleships Game - Flowchart](https://github.com/OMandila/battleships_game/assets/71443713/d206eaf0-220e-429b-a4b1-27e8ca503ceb)
 
 ## Project Overview
 This project simulates the classic Battleships game where players take turns to guess the locations of each other's ships on a hidden board with the aim of "capsizing" all the opponent's ships.
