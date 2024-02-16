@@ -1,5 +1,6 @@
 # The Mini Battleships Game
 This is a Python terminal game running in the Code Institute mock terminal on Heroku.
+![amiresponsive screens for Battleship Game](https://github.com/OMandila/battleships_game/assets/71443713/b8b5a84d-9a88-45ae-bf6f-759d114d1314)
 
 ## Table of Contents
 - [Introduction](#introduction)
@@ -33,6 +34,7 @@ This is a Python terminal game running in the Code Institute mock terminal on He
 
 ## Introduction
 The Mini Battleships Game is a strategy type guessing game designed for two players: the PLAYER (you) and the OPPONENT (computer).
+![Battleships Game - Flowchart](https://github.com/OMandila/battleships_game/assets/71443713/d206eaf0-220e-429b-a4b1-27e8ca503ceb)
 
 ## Project Overview
 This project simulates the classic Battleships game where players take turns to guess the locations of each other's ships on a hidden board with the aim of "capsizing" all the opponent's ships.
@@ -51,19 +53,21 @@ Here’s how to get started with this game:
 ## Features
 ### Existing features
 *Interactive Battleship Placement:* The Player can input their battleship positions at the beginning of the game.
+![image](https://github.com/OMandila/battleships_game/assets/71443713/69cd0eb1-90a6-456e-bc74-5fc70b989475)
 
+![image](https://github.com/OMandila/battleships_game/assets/71443713/e7f64545-acb2-46e1-b302-956ec1df5cb8)
+
+![image](https://github.com/OMandila/battleships_game/assets/71443713/4c85131b-84c0-4cfe-8f96-30bf1b95661b)
 
 *Automatic Enemy Fire:* The computer randomly selects targets, simulating enemy fire.
 
-
 *Hit and Miss Feedback:* The board updates with symbols indicating hits and misses.
 
-
 *Score Calculation:* At the end of each game, scores are calculated based on the number of ships sunk and remaining.
-
+![image](https://github.com/OMandila/battleships_game/assets/71443713/5d30d992-73c8-4660-a205-c1e6a5f88d20)
 
 *Automatic Restart:* The Player can restart the game every time by typing anything apart from 'N' at the end.
-
+![image](https://github.com/OMandila/battleships_game/assets/71443713/3e8b59e4-0a6e-4982-913b-bade54b20a05)
 
 ### Future features
 *Player vs. Player Mode:* Allowing two human players to compete against each other.
