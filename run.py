@@ -123,8 +123,9 @@ def main():
         if end == 'n':
             break
 
-print()
-print("-----------------------THE MINI BATTLESHIPS GAME-----------------------")
-print("This is a strategy type guessing game for one player against the computer.")
-print("You only win by having more battleships available than the ones destroyed by the computer.")
-main()
+if __name__ == "__main__":
+	print()
+	print("-----------------------THE MINI BATTLESHIPS GAME-----------------------")
+	print("This is a strategy type guessing game for one player against the computer.")
+	print("You only win by having more battleships available than the ones destroyed by the computer.")
+	main()
